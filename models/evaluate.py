@@ -16,7 +16,7 @@ def evaluate_model(model, X_test, y_test, config):
 
     if config['task'] == 'regression':
         mae = mean_absolute_error(y_test, preds)
-        print("📈 MAE:", mae)
+        print("MAE:", mae)
 
         plt.figure()
         plt.plot(preds[:100], label="Prediction")
@@ -24,15 +24,15 @@ def evaluate_model(model, X_test, y_test, config):
         plt.legend()
         plt.title("Predicted vs Actual")
         plt.savefig("results/prediction_vs_actual.png")
-        print("🖼️ Saved plot to results/prediction_vs_actual.png")
+        print("Saved plot to results/prediction_vs_actual.png")
 
     else:
         acc = accuracy_score(y_test, preds)
-        print("📊 Accuracy:", acc)
+        print("Accuracy:", acc)
 
         cm = confusion_matrix(y_test, preds)
         disp = ConfusionMatrixDisplay(confusion_matrix=cm)
         disp.plot()
         plt.title("Confusion Matrix")
         plt.savefig("results/confusion_matrix.png")
-        print("🖼️ Saved plot to results/confusion_matrix.png")
+        print("Saved plot to results/confusion_matrix.png")
