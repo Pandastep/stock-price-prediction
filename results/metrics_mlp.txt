@@ -1,0 +1,8 @@
+Evaluation Metrics
+==================
+Accuracy: 0.5052
+ROC AUC: 0.5271
+F1 Score: 0.5490
+Confusion Matrix:
+[[552 885]
+ [454 815]]

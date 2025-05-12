@@ -1,0 +1,23 @@
+data:
+  tickers: ["AAPL", "GOOG", "TSLA", "MSFT", "NFLX", "NVDA", "META", "AMZN"]
+  start_date: "2010-01-01"
+  end_date: "2023-12-31"
+  window_size: 30
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+
+model:
+  type: mlp # lstm gru
+  input_dim: 12
+  hidden_dim: 64
+  num_layers: 1
+  dropout: 0.2
+
+
+
+training:
+  batch_size: 64
+  epochs: 100
+  learning_rate: 0.001
+  early_stopping_patience: 10
