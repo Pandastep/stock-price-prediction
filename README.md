@@ -31,35 +31,6 @@ Will the stock price increase by more than 0.2% on the next day?
 > **MLP** achieved the best F1 score; **LightGBM** performed best overall in terms of balance.
 > **LightGBM** offered the best tradeoff between accuracy and AUC
 
-## 🗂 Project Structure
-smp/
-├── main.py
-├── configs/
-│   └── default.yaml
-├── data/
-│   ├── raw/
-│   └── processed/
-├── models/
-│   ├── lstm_model.py
-│   ├── gru_model.py
-│   ├── mlp_model.py
-│   ├── train_lstm.py
-│   ├── train_gru.py
-│   ├── train_mlp.py
-│   ├── evaluate_lstm.py
-│   ├── evaluate_gru.py
-│   ├── evaluate_mlp.py
-│   └── __init__.py
-├── results/
-│   ├── metrics_*.txt
-│   ├── predictions_*.png
-│   ├── probability_distribution_*.png
-│   └── feature_importance_*.png
-├── analyze_features.py
-├── requirements.txt
-├── .gitignore
-└── README.md
-
 ## Installation
 ```bash
 pip install -r requirements.txt
