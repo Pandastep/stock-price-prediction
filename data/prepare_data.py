@@ -20,7 +20,7 @@ def add_technical_indicators(df):
 
     for col in ['Open', 'High', 'Low', 'Close', 'Volume']:
         df[col] = pd.to_numeric(df[col], errors='coerce')
-        # RSI
+    # RSI
     delta = df['Close'].diff()
     gain = delta.where(delta > 0, 0)
     loss = -delta.where(delta < 0, 0)
@@ -35,7 +35,7 @@ def add_technical_indicators(df):
     df['MA_7'] = df['Close'].rolling(7).mean()
     df['MA_21'] = df['Close'].rolling(21).mean()
 
-    # New features
+    # Other features
     df['Volatility'] = df['High'] - df['Low']
     df['Daily_Return'] = (df['Close'] - df['Open']) / df['Open']
     df['Volume_Change'] = df['Volume'].pct_change()
