@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-# Stock Market Prediction Baseline
-
-This repository contains a baseline LSTM model for stock market trend prediction (binary classification of daily price movements).
-
-## Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/stock-prediction-baseline.git
-   cd stock-prediction-baseline
-=======
 # Stock Market Price Movement Prediction
 
 A project to predict the direction of stock price movement using historical data and technical indicators.
@@ -47,4 +35,3 @@ Will the stock price increase by more than 0.2% on the next day?
 ```bash
 pip install -r requirements.txt
 python main.py --all
->>>>>>> 65686c6e75c25962cd1a17ec904714d39770b9ae
