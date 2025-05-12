@@ -18,7 +18,6 @@ def load_data():
 def train_model(config):
     X_train, y_train, X_val, y_val = load_data()
 
-    # Используем только последний шаг временного окна
     X_train = X_train[:, -1, :]  # (samples, features)
     X_val = X_val[:, -1, :]
 
